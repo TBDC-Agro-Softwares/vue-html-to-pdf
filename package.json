@@ -1,0 +1,61 @@
+{
+  "name": "@tbdc-agro-softwares/vue-html-to-pdf",
+  "description": "This library converts any vue component or element into PDF",
+  "version": "1.0.0",
+  "private": false,
+  "license": "MIT",
+  "type": "module",
+  "main": "./dist/vue-html-to-pdf.umd.cjs",
+  "module": "./dist/vue-html-to-pdf.js",
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./dist/components.d.ts",
+        "default": "./dist/vue-html-to-pdf.js"
+      },
+      "require": {
+        "types": "./dist/components.d.ts",
+        "default": "./dist/vue-html-to-pdf.umd.cjs"
+      }
+    },
+    "./dist/components.d.ts": {
+      "import": "./dist/components.d.ts",
+      "require": "./dist/components.d.ts"
+    },
+    "./dist/vue-html-to-pdf.css": {
+      "import": "./dist/vue-html-to-pdf.css",
+      "require": "./dist/vue-html-to-pdf.css"
+    }
+  },
+  "types": "./dist/components.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "vite build"
+  },
+  "keywords": [
+    "pdf-generation",
+    "vue",
+    "vuejs",
+    "client-side",
+    "html",
+    "canvas",
+    "html2pdf"
+  ],
+  "dependencies": {
+    "@types/node": "^22.4.2",
+    "@vitejs/plugin-vue": "^5.1.2",
+    "html2pdf.js": "^0.10.2",
+    "prettier": "^3.3.3",
+    "sass": "^1.77.8",
+    "sass-loader": "^16.0.1",
+    "typescript": "^5.5.4",
+    "vite": "^5.4.2",
+    "vite-plugin-dts": "^4.0.3",
+    "vite-plugin-static-copy": "^1.0.6"
+  },
+  "peerDependencies": {
+    "vue": "3"
+  }
+}
