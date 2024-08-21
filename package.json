@@ -1,7 +1,8 @@
 {
   "name": "@tbdc-agro-softwares/vue-html-to-pdf",
   "description": "This library converts any vue component or element into PDF",
-  "version": "1.0.0",
+  "repository": "https://github.com/TBDC-Agro-Softwares/vue-html-to-pdf",
+  "version": "1.0.1",
   "private": false,
   "license": "MIT",
   "type": "module",
